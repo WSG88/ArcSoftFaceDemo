@@ -12,3 +12,17 @@ public class MyMvcConfig implements WebMvcConfigurer {
         registry.addViewController("toImageDemo").setViewName("imageDemo");
     }
 }
+
+/*
+
+//上面到的写法等价于：
+
+@Controller
+public class EmpContrller {
+
+    @RequestMapping("toImageDemo")
+    public String toImageDemo() {
+
+        return "imageDemo";
+    }
+}*/
